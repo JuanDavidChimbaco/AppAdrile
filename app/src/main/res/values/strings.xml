@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Adrile</string>
+    <string name="title_activity_menu">menu</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="logo_de_la_aplicacion">Logo de la aplicación</string>
+    <string name="logo">Logo de la aplicación</string>
+    <string name="adrile_boutique">Adrile boutique</string>
+</resources>
