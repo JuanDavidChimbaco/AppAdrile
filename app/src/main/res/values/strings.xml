@@ -7,6 +7,42 @@
     <string name="logo_de_la_aplicacion">Logo de la aplicación</string>
     <string name="logo">Logo de la aplicación</string>
     <string name="adrile_boutique">Adrile boutique</string>
-    <string name="imagen_para_el_carousel">Imagen para el carousel</string>
-    <string name="iniciar_sesion">Iniciar sesión</string>
+    <string name="iniciar_sesion">iniciar_sesion</string>
+    <string name="imagen_para_el_carousel">imagen_para_el_carousel</string>
+    <string name="todo">TODO</string>
+    <string name="todo2">TODO</string>
+    <string name="todo3">TODO</string>
+    <string name="contacto">Contacto</string>
+    <string name="adrile_boutique2">Adrile Boutique</string>
+    <string name="carrera_9a_4_17">Carrera 9a # 4-17</string>
+    <string name="palermo_huila_colombia">Palermo, Huila, Colombia</string>
+    <string name="tel_fono_57_316_759_96_27">Teléfono: (+57) 316 759 96 27</string>
+    <string name="email_adrileboutique_gmail_com">Email: adrileboutique@gmail.com</string>
+    <string name="s_guenos">Síguenos</string>
+    <string name="productos">Productos</string>
+    <string name="enlaces">Enlaces</string>
+    <string name="inicio">Inicio</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Iniciar Sesión</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_panel">PanelActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Adrile Boutique</string>
+    <string name="nav_header_subtitle">adrileboutique@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="pane">Panel Principal</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="asd">TODO</string>
 </resources>

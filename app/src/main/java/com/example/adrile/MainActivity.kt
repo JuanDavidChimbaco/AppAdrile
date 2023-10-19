@@ -9,9 +9,9 @@ import android.widget.TextSwitcher
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
-import com.example.adrile.ui.dashboard.DashboardFragment
+import com.example.adrile.ui.acerca.AcercaFragment
 import com.example.adrile.ui.home.HomeFragment
-import com.example.adrile.ui.notifications.NotificationsFragment
+import com.example.adrile.ui.login.LoginFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
@@ -28,9 +28,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         // Encuentra elementos de la interfaz de usuario
-        val header = findViewById<LinearLayout>(R.id.header)
-        val mainContent = findViewById<FrameLayout>(R.id.mainContent)
-        val footer = findViewById<LinearLayout>(R.id.footer)
         val bottomNav = findViewById<BottomNavigationView>(R.id.bottomNav)
 
         textSwitcher.setFactory {
@@ -64,18 +61,7 @@ class MainActivity : AppCompatActivity() {
         }
         handler.postDelayed(runnable, 0)  // Inicia la marquesina
 
-        // Configura eventos o realiza acciones según sea necesario
-        header.setOnClickListener {
-            // Hacer algo cuando se hace clic en el encabezado
-        }
 
-        mainContent.setOnClickListener {
-            // Hacer algo cuando se hace clic en el encabezado
-        }
-
-        footer.setOnClickListener {
-            // Hacer algo cuando se hace clic en el encabezado
-        }
         // Agrega más lógica según tus necesidades
         // Mostrar el fragmento de inicio por defecto
         val initialFragment = HomeFragment() // Reemplaza con el nombre de tu fragmento
@@ -92,7 +78,7 @@ class MainActivity : AppCompatActivity() {
                     // Puedes reemplazar esto con la lógica de tu aplicación
                     // por ejemplo, cambiar el contenido del FrameLayout (mainContent)
 
-                    val fragment = HomeFragment() // Reemplaza con el nombre de tu fragmento
+                    val fragment = HomeFragment() // fragmento
 
                     supportFragmentManager.beginTransaction()
                         .replace(R.id.mainContent, fragment)
@@ -100,9 +86,9 @@ class MainActivity : AppCompatActivity() {
 
                     return@setOnItemSelectedListener true
                 }
-                R.id.navigation_dashboard -> {
-                    // Mostrar la sección de dashboard
-                    val fragment = DashboardFragment() // Reemplaza con el nombre de tu fragmento
+                R.id.navigation_acerca -> {
+                    // Mostrar la sección de acerca
+                    val fragment = AcercaFragment() // fragmento
 
                     supportFragmentManager.beginTransaction()
                         .replace(R.id.mainContent, fragment)
@@ -110,14 +96,13 @@ class MainActivity : AppCompatActivity() {
 
                     return@setOnItemSelectedListener true
                 }
-                R.id.navigation_notifications -> {
-                    // Mostrar la sección de notificaciones
+                R.id.navigation_login-> {
+                    // Mostrar la sección de login
 
-                    val fragment = NotificationsFragment() // Reemplaza con el nombre de tu fragmento
+                    val fragment = LoginFragment() // fragmento
 
                     supportFragmentManager.beginTransaction()
-                        .replace(R.id.mainContent, fragment)
-                        .commit()
+                        .replace(R.id.mainContent,fragment).commit()
                     return@setOnItemSelectedListener true
                 }
                 else -> false

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:checkableBehavior="single"
+        android:enabled="true"
+        android:menuCategory="secondary"
+        android:visible="true">
+        <item
+            android:id="@+id/nav_home"
+            android:background="@color/colorSeleccionado"
+            android:checkable="true"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Panel Principal" />
+        <item
+            android:id="@+id/nav_Entry"
+            android:background="@drawable/menu_item_selector"
+            android:checkable="true"
+            android:icon="@drawable/downward"
+            android:title="Entradas" />
+        <item
+            android:id="@+id/nav_stock"
+            android:background="@drawable/menu_item_selector"
+            android:checkable="true"
+            android:icon="@drawable/packag"
+            android:title="Stock" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:background="@drawable/menu_item_selector"
+            android:checkable="true"
+            android:icon="@drawable/pward"
+            android:title="Salidas" />
+    </group>
+</menu>

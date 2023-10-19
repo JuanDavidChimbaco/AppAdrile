@@ -7,7 +7,7 @@
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
-        android:layout_height="400dp"
+        android:layout_height="wrap_content"
         android:contentDescription="@string/imagen_para_el_carousel"
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent" />
