@@ -5,49 +5,38 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp"
+    android:padding="1dp"
     tools:context=".MainActivity">
 
     <!-- Header -->
     <LinearLayout
         android:id="@+id/header"
         android:layout_width="match_parent"
-        android:layout_height="81dp"
-        android:gravity="center"
+        android:layout_height="92dp"
         android:background="@drawable/rounded_background"
+        android:gravity="center"
         android:orientation="horizontal">
         <!-- Agrega elementos del encabezado aquí -->
 
         <ImageView
             android:layout_width="74dp"
-            android:layout_height="81dp"
-            android:layout_margin="16dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
             android:contentDescription="@string/logo_de_la_aplicacion"
             android:src="@drawable/logo" />
 
-        <TextView
-            android:layout_width="184dp"
-            android:layout_height="81dp"
-            android:ellipsize="marquee"
-            android:focusable="true"
-            android:focusableInTouchMode="true"
-            android:gravity="center"
-            android:marqueeRepeatLimit="marquee_forever"
-            android:scrollbars="horizontal"
-            android:scrollHorizontally="true"
-            android:singleLine="true"
-            android:text="@string/adrile_boutique"
-            android:textColor="@color/white"
-            android:fontFamily="cursive"
-            android:textSize="32sp"
-            tools:ignore="TextSizeCheck" />
+        <TextSwitcher
+            android:id="@+id/textSwitcher"
+            android:layout_width="242dp"
+            android:layout_height="69dp"
+            android:inAnimation="@anim/slide_in_right" />
 
-        <ImageView
-            android:layout_width="80dp"
-            android:layout_height="81dp"
-            android:layout_margin="16dp"
-            android:padding="16dp"
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
             android:contentDescription="@string/logo"
+            android:padding="16dp"
             android:src="@drawable/image" />
 
     </LinearLayout>
@@ -69,7 +58,7 @@
 
     <FrameLayout
         android:id="@+id/mainContent"
-        android:layout_width="367dp"
+        android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_margin="8dp"
         android:layout_weight="1">

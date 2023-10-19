@@ -7,4 +7,6 @@
     <string name="logo_de_la_aplicacion">Logo de la aplicación</string>
     <string name="logo">Logo de la aplicación</string>
     <string name="adrile_boutique">Adrile boutique</string>
+    <string name="imagen_para_el_carousel">Imagen para el carousel</string>
+    <string name="iniciar_sesion">Iniciar sesión</string>
 </resources>
